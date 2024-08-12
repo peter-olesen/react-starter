@@ -1,0 +1,10 @@
+button {
+    border: solid 1px red;
+    background: white;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}

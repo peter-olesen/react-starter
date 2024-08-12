@@ -1,13 +1,13 @@
-import style from '../styles/Nav.module.scss'
+import navStyles from '../styles/Nav.module.scss'
 
 export const Nav = () => {
     return (
-    <nav>
-        <ul className={style.navbarStyle}>
-            <li><a className={style.navLink} href="#">Front</a></li>
-            <li><a className={style.navLink} href="#">About</a></li>
-            <li><a className={style.navLink} href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <nav className={navStyles.navbar}>
+            <ul className={navStyles.navbarStyle}>
+                <li><a className={navStyles.navLink} href="#">Front</a></li>
+                <li><a className={navStyles.navLink} href="#">About</a></li>
+                <li><a className={navStyles.navLink} href="#">Contact</a></li>
+            </ul>
+        </nav>
     )
 }
