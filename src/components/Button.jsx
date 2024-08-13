@@ -11,3 +11,9 @@ export const ButtonComponent = ({ id, className, buttonText, onClick, disabled }
         </button>
     )
 }
+
+export const varButton = ({action, size, theme, text}) => {
+    return (
+        <button>{text}</button>
+    )
+}
