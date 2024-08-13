@@ -1,9 +1,12 @@
 import { ButtonComponent } from './Button'
 import { Greeting, NewGreet } from './Greeting'
+import { FavoriteFoods } from './FavoriteFoods'
 import mainStyles from '../styles/Main.module.scss'
 import buttonStyles from '../styles/Button.module.scss'
 
 export const Main = () => {
+    const favorites = ['Lasagna', 'Pizza', 'Burger', 'Food', 'More food']
+
     return (
         <main className={mainStyles.mainStyle}>
 
@@ -22,6 +25,8 @@ export const Main = () => {
             <ButtonComponent className={buttonStyles.stdButton} buttonText="Click me!" onClick={() => alert('Button clicked!')} />
             <ButtonComponent className={buttonStyles.stdButton} buttonText="Not a button" />
             <ButtonComponent id="testid" className={buttonStyles.stdButton} buttonText="Disabled Button" disabled />
+
+            <FavoriteFoods myFavorites={favorites} />
         </main>
     )
 }
