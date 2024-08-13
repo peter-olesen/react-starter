@@ -1,8 +1,13 @@
-button {
+.stdButton {
     border: solid 1px red;
-    background: white;
+    background-color: white;
     margin: 1rem;
     cursor: pointer;
+}
+
+.redButton {
+    background-color: red!important;
+    border: solid 5px blue;
 }
 
 button:disabled {

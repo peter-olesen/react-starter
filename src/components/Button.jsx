@@ -1,8 +1,11 @@
-export const ButtonComponent = ({buttonText, onClick, disabled}) => {
+export const ButtonComponent = ({ id, className, buttonText, onClick, disabled }) => {
+
     return (
         <button
-            disabled={disabled}
+            id={id}
+            className={className}
             onClick={onClick}
+            disabled={disabled}
         >
             {buttonText}
         </button>

@@ -6,3 +6,9 @@ export const Greeting = ({ name, className }) => {
         </>
     )
 }
+
+export const NewGreet = (props) => {
+    return (
+        <h3>Welcome to the land of the living, {props.YourName}! {props.anyValue}</h3>
+    )
+}
